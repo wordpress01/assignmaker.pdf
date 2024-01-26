@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gender Selection</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="pdf.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Assignments Maker - PDFs
+        </a>
+      </div>
+    </nav>
+    <div class="container mt-5">
+      <h1>Select Your Gender</h1>
+      <div class="btn-group" role="group" aria-label="Gender">
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="openPage('male.html')"
+        >
+          Male
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="openPage('female.html')"
+        >
+          Female
+        </button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function openPage(page) {
+        window.location.href = page;
+      }
+    </script>
+  </body>
+</html>

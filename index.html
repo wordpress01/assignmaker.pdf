@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignments - File Maker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        opacity: 1;
+        color-scheme: dark;
+        background-color: rgb(17, 34, 39);
+        color: aliceblue;
+      }
+      select {
+        width: 100%;
+        height: 35px;
+        border-radius: 5px;
+        background-color: #fff;
+        color: black;
+      }
+      footer {
+        background: #111;
+        padding: 15px 23px;
+        color: #fff;
+        text-align: center;
+      }
+
+      footer span a {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer span a:hover {
+        text-decoration: none;
+      }
+      .para {
+        margin: 10px;
+        padding: 10px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      marquee {
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+      }
+
+      .btn {
+        margin-left: 37vw;
+      }
+      .output {
+        color: #fff;
+        font-size: 20px;
+        font-style: italic;
+        margin-left: 10vw;
+      }
+
+      /* Add style to hide the button initially */
+      #openWebpageButton {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="pdf.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Assignments Maker - PDFs
+        </a>
+      </div>
+    </nav>
+
+    <p class="para">
+      Welcome to our innovative website, where we've streamlined the process of
+      creating PDFs for your convenience. To get started, fill out the short
+      form below with the necessary details. Specify the document type, provide
+      the text or upload the file you want to convert, and choose any additional
+      preferences. Our advanced PDF creation tool will then process your input
+      and promptly deliver a downloadable, high-quality PDF document tailored to
+      your specifications!
+    </p>
+
+    <marquee behavior="alternate" direction="right" scrollamount="10"
+      >Fill Out The Form Below !</marquee
+    >
+
+    <div class="container mt-5">
+      <form
+        method="post"
+        enctype="text/plain"
+        action="mailto:noreply.wordpress.com@gmail.com"
+      >
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your name"
+            name="Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email-id"
+            name="Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="phone"
+            placeholder="Enter Phone Number"
+            name="Number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="course">Select Course:</label><br />
+          <select name="Course" id="course">
+            <option value="">--select--</option>
+            <option value="Btech-Cse">Btech(CSE)</option>
+            <option value="Btech Cse+Iot">Btech(CSE+IOT)</option>
+            <option value="Btech Aiml">Btech(AIML)</option>
+            <option value="Bca">BCA</option>
+            <option value="Bba">BBA</option>
+            <option value="Btech mech">Btech Mechanical</option>
+            <option value="Poly Electrical">Polytecnic Electrical</option>
+            <option value="Poly CS/IT">Polytecnic CS/IT</option>
+            <option value="Poly Electronics">Polytecnic Electronics</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="year">Select Your Year:</label>
+          <select name="year" id="year">
+            <option value="None">--select--</option>
+            <option value="first">first</option>
+            <option value="second">second</option>
+            <option value="third">third</option>
+            <option value="fourth">fourth</option>
+            <option value="fifth">fifth</option>
+          </select>
+        </div>
+
+        <div class="form-goup">
+          <label for="section">Select Your Section:</label>
+          <select name="Section" id="section">
+            <option value="None">--select--</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="rollNumber"
+            >Your Board Roll Number/class Roll Number</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="rollNumber"
+            placeholder="Enter Roll Number"
+            name="Roll No"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input
+            type="date"
+            class="form-control"
+            id="dob"
+            name="DOB"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Any Comments:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Write Comments Here"
+            name="Comments"
+          />
+        </div>
+        <br /><br />
+
+        <button type="submit" id="myButton" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
+    <div id="outputText" class="output"></div>
+
+    <!-- Delayed button -->
+    <script>
+      setTimeout(function () {
+        var outputDiv = document.getElementById("outputText");
+        outputDiv.textContent = "Scroll Down After Submiting Form  !";
+        outputDiv.style.display = "block";
+      }, 15000);
+      setTimeout(function () {
+        // Show the button after 15 seconds
+        document.getElementById("openWebpageButton").style.display = "block";
+      }, 25000);
+    </script>
+
+    <p class="para">
+      Say goodbye to the hassle of formatting and design - with just a few
+      clicks, you can turn your ideas into polished, visually appealing PDFs.
+      Our user-friendly interface ensures a seamless experience, allowing you to
+      focus on your content while we take care of the rest. Whether you're
+      creating reports, resumes, or educational materials, our platform
+      streamlines the process, making document creation a breeze. Experience the
+      power of simplicity and elegance as you witness your ideas come to life in
+      the form of stunning PDFs. Elevate your document creation game with us!
+    </p>
+    <!-- Button to redirect to a new page -->
+    <button
+      id="openWebpageButton"
+      class="btn btn-primary mb-3 mr-3"
+      onclick="openWebpage()"
+    >
+      Now, Click Here
+    </button>
+
+    <footer>
+      <span
+        >Created By
+        <a href="textglitch.html"
+          ><span class="fab fa-github"></span> Wordpress Organisations</a
+        >
+        | <span class="far fa-copyright"></span> 2024 &copy; All rights
+        reserved.</span
+      >
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openWebpage() {
+        window.open(
+          "confirm.html",
+          "Confirmation Page",
+          "_blank",
+          "width=500,height=300"
+        );
+      }
+    </script>
+  </body>
+</html>

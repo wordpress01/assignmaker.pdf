@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>FileMaker Assignments</title>
+    <style>
+      body {
+        margin: 10px;
+        padding: 10px;
+        opacity: 1;
+        color-scheme: dark;
+        background-color: rgb(17, 34, 39);
+        color: aliceblue;
+      }
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="pdf.png"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Assignments Maker - PDFs
+        </a>
+      </div>
+    </nav>
+
+    <h1>Make Big Assignments Very Easily and Beautifully!</h1>
+    <p>
+      Create dynamic and user-friendly <b>PDF assignments</b> with our website,
+      designed to streamline the assignment generation process. Our platform
+      offers an intuitive interface that allows you to input assignment details,
+      including questions, formatting preferences, and any additional
+      instructions. With a click of a button, our system generates polished
+      <b>PDF</b> documents, ready for distribution to students or colleagues.
+      Enhance efficiency and professionalism in <i>assignment creation</i>,
+      saving time and ensuring a consistent and professional appearance for all
+      your educational or professional materials.
+    </p>
+
+    <h2>Click On Different Links To make Your Pdf Ready !</h2>
+
+    <div class="container">
+      <div class="btn-container">
+        <button type="button" class="btn btn-primary" id="linkOne">
+          Link One
+          <audio id="audio1" src="19671.mp3"></audio>
+        </button>
+      </div>
+      <div class="btn-container">
+        <button type="button" class="btn btn-success" id="linkTwo">
+          Link Two
+        </button>
+        <audio id="audio2" src="comedy.mp3"></audio>
+      </div>
+      <div class="btn-container">
+        <button type="button" class="btn btn-info" id="linkThree">
+          Link Three
+        </button>
+        <audio id="audio3" src="bol.mp3"></audio>
+      </div>
+      <div class="btn-container">
+        <div class="download">
+          <button id="downloadButton" type="button" class="btn btn-info">Link Four</button>
+          <a href="lastpage.html"></a>
+      </div>
+      </div>
+    </div>
+
+
+    <footer class="fixed-bottom">
+      <span
+        >Created By
+        <a href="textglitch.html"
+          ><span class="fab fa-github"></span> Wordpress Organisations</a
+        >
+        | <span class="far fa-copyright"></span> 2024 &copy; All rights
+        reserved.</span
+      >
+    </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.getElementById("downloadButton").addEventListener("click", function () {
+          var countdown = 10;
+          var timer = setInterval(function () {
+              countdown--;
+              if (countdown <= 0) {
+                  clearInterval(timer);
+                  window.location.href = document.querySelector(".download a").getAttribute("href");
+              }
+              document.getElementById("downloadButton").textContent = "Generating Link In " + countdown + " seconds";
+          }, 1000);
+      });
+  </script>
+    <script>
+      document.getElementById("linkOne").addEventListener("click", function () {
+        var audio = document.getElementById("audio1");
+        audio1.play();
+      });
+      document.getElementById("linkTwo").addEventListener("click", function () {
+        var audio = document.getElementById("audio2");
+        audio2.play();
+      });
+      document.getElementById("linkThree").addEventListener("click", function () {
+        var audio = document.getElementById("audio3");
+        audio3.play();
+      });
+    </script>
+  </body>
+</html>
