@@ -178,6 +178,9 @@
             <option value="Poly Electrical">Polytecnic Electrical</option>
             <option value="Poly CS/IT">Polytecnic CS/IT</option>
             <option value="Poly Electronics">Polytecnic Electronics</option>
+            <option value="poly mechanical">Polytechnic Mechanical</option>
+            <option value="B.voc">B.Voc(Bachelor of vocational studies)</option>
+            <option value="B.ped">B.PED(Bachelor of Physical education)</option>
           </select>
         </div>
 
@@ -207,18 +210,44 @@
           <label for="subject">Select Subject:</label><br />
           <select name="Subject" id="subject">
             <option value="none">--select--</option>
-            <option value="pps">PPS</option>
+            <option value="pps">PPS(Programming for Problem Solving)</option>
             <option value="Evs">Environment and ecology</option>
-            <option value="MATHS">Maths</option>
+            <option value="MATHS">Maths I</option>
+            <option value="Maths II">Maths II</option>
+            <option value="Maths III">Maths III</option>
+            <option value="Maths IV">Maths IV</option>
             <option value="Electronics">Electronics</option>
             <option value="Electrical">Electrical</option>
             <option value="Chem">Chemistry</option>
             <option value="phy">Physics</option>
             <option value="Cybersecurity">Cybersecurity</option>
+            <option value="COI">COI(constitution of India)</option>
+            <option value="SOM">SOM(Strength of Materials)</option>
+            <option value="DSA">DSA(Data structure and Algorithms)</option>
+            <option value="DSTL">DSTL(Discrete Structure and Theory of Logic)</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+            <option value="Energy Science">Energy science</option>
+            <option value="Cryptography">Cryptography</option>
+            <option value="Data analytics">Data analytics</option>
+            <option value="Computer Organisation">Computer Organisation</option>
+            <option value="NLP">NLP</option>
+            <option value="DBMS">DBMS(Database Management system)</option>
+            <option value="Object oriented programming">Object oriented Programming</option>
             <option value="others">Others</option>
           </select>
         </div>
-
+        <div class="form-goup">
+          <label for="section">Assignment or Notes?</label>
+          <select name="Assignment or notes " id="section">
+            <option value="None">--select--</option>
+            <option value="assignment">Assignment</option>
+            <option value="handwritten notes">Handwritten Notes</option>
+            <option value="digital notes" onclick="digital()">Digital notes</option>
+          </select>
+        </div>
+        <p id="digital"></p>
         <div class="form-group">
           <label for="lengthofpdf">Pages in pdf?</label>
           <input
@@ -316,6 +345,13 @@
         reserved.</span
       >
     </footer>
+    <script>
+      function digital(){
+       var output = document.getElementById("digital");
+        outputDiv.textContent = "We will use GPT-4 to generate notes!";
+        outputDiv.style.display = "block"; 
+      }
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
