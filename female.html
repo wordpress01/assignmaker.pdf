@@ -43,9 +43,21 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <script>
+function enter() {
+  let text;
+  let person = prompt("Please enter your name:", "");
+  if (person == null || person == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    text = "Hello " + person + "! Lets Start !";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+    </script>
   </head>
 
-  <body>
+  <body onload="enter()">
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -62,6 +74,7 @@
     </nav>
 
     <h1>Make Big Assignments Very Easily and Beautifully!</h1>
+    <h3 id="demo"></h3>
     <p>
       Create dynamic and user-friendly <b>PDF assignments</b> with our website,
       designed to streamline the assignment generation process. Our platform
